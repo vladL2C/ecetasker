@@ -11,8 +11,8 @@
     </div>
     <div class="navbar-menu" id="navMenu">
       <div class="navbar-end">
-        <%= link_to "App", app_path, class: "navbar-item"%>
-        <%= link_to "About", "/", class: "navbar-item"%>
+        <%= link_to "App", app_path, class: "navbar-item", 'data-turbolinks' => false%>
+        <%= link_to "Home", root_path, class: "navbar-item"%>
         <%= link_to "Contact", "/", class: "navbar-item"%>
       </div>  
     </div>
