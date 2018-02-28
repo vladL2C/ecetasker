@@ -1,9 +1,10 @@
 import React from 'react';
+import '../src/new.css';
 
 export default class SampleComponent extends React.Component {
   render() {
     return (
-      <h1>Hi, I'm SampleComponent poops!</h1>
+      <div className="styled">Hi, I'm SampleComponent poops!</div>
     );
   }
 }
