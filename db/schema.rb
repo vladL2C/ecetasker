@@ -10,13 +10,34 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180227073600) do
+ActiveRecord::Schema.define(version: 20180301072904) do
 
   create_table "children", force: :cascade do |t|
     t.string "name"
-    t.string "lastname"
+    t.string "last_name"
+    t.integer "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["user_id"], name: "index_children_on_user_id"
+  end
+
+  create_table "routines", force: :cascade do |t|
+    t.integer "nappy"
+    t.integer "toilet"
+    t.string "comments"
+    t.integer "child_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["child_id"], name: "index_routines_on_child_id"
+  end
+
+  create_table "sleeps", force: :cascade do |t|
+    t.datetime "time_asleep"
+    t.datetime "time_awake"
+    t.integer "child_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["child_id"], name: "index_sleeps_on_child_id"
   end
 
   create_table "users", force: :cascade do |t|

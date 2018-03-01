@@ -1,4 +1,3 @@
 class Child < ApplicationRecord
-  validates :name, presence: true
-  validates :lastname, presence: true
+  belongs_to :teacher, class_name: "User"
 end
