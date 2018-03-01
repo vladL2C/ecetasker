@@ -2,6 +2,10 @@
   background-color: #5997bf;
 }
 
+div.hero-body {
+  background-color: #5997bf;
+}
+
 .login {
   color: white;
 }
@@ -53,4 +57,11 @@ body {
   span:nth-child(3) {
     top: calc(50% - -3px);
   }
+}
+
+div.columns.features {
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+  margin-top: 0.25rem;
+
 }
