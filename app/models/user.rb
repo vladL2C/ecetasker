@@ -3,6 +3,10 @@ class User < ApplicationRecord
   # :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
-  
-  has_many :kids, class_name: "Child", foreign_key: "user_id"     
+
+  belongs_to :center, optional: true    
+  has_many :teacher_children
+  has_many :children, through: :teacher_children
+
+
 end

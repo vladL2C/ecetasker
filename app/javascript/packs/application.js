@@ -12,14 +12,14 @@ import React from 'react';
 import { render } from 'react-dom';
 import { BrowserRouter, Link, Route } from 'react-router-dom';
 
-import SampleComponent from '../components/SampleComponent';
+import NavigationMenu from '../components/NavigationMenu';
 
 
 const Root = () => {
   return (
     <BrowserRouter>
       <div>
-        <Route path='/app' component={SampleComponent} />
+        <Route path='/app' component={NavigationMenu} />
       </div>
     </BrowserRouter>
   )

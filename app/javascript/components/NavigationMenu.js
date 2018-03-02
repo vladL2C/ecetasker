@@ -1,8 +1,8 @@
 import React from 'react';
-import Another from './Another';
 
 
-export default class SampleComponent extends React.Component {
+
+class NavigationMenu extends React.Component {
 
   sayHello = (e) => {
     console.log(e.target);
@@ -11,8 +11,9 @@ export default class SampleComponent extends React.Component {
   render() {
     return (
       <div className="styled">Helllooo
-        <Another sayHello={this.sayHello}/>
       </div>
     );
   }
 }
+
+export default NavigationMenu;
