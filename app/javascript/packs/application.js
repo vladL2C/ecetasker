@@ -18,9 +18,9 @@ import NavigationMenu from '../components/NavigationMenu';
 const Root = () => {
   return (
     <BrowserRouter>
-      <div>
+      
         <Route path='/app' component={NavigationMenu} />
-      </div>
+      
     </BrowserRouter>
   )
 };
