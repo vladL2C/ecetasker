@@ -1,4 +1,5 @@
 import React from 'react';
+import '../css/navstyle.css';
 
 
 
@@ -17,15 +18,15 @@ class NavigationMenu extends React.Component {
                 General
               </p>
               <ul className="menu-list">
-                <li><a><i className="fa fa-tachometer" aria-hidden="true"></i>Dashboard</a></li>
+                <li><a><i className="fa fa-tachometer" aria-hidden="true"></i><span className="nav-item">Dashboard</span></a></li>
               </ul>
               <p className="menu-label">
                 ADMINISTRATION
               </p>
               <ul className="menu-list">
-                <li><a><i className="fa fa-calendar" aria-hidden="true"></i>Sleep Times</a></li>
-                <li><a><i className="fa fa-line-chart" aria-hidden="true"></i>Toilet Chart</a></li>
-                <li><a><i className="fa fa-cutlery" aria-hidden="true"></i>Food Register</a></li>
+                <li><a><i className="fa fa-calendar" aria-hidden="true"></i><span className="nav-item">Sleep Times</span></a></li>
+                <li><a><i className="fa fa-line-chart" aria-hidden="true"></i><span className="nav-item">Toilet Chart</span></a></li>
+                <li><a><i className="fa fa-cutlery" aria-hidden="true"></i><span className="nav-item">Food Register</span></a></li>
               </ul>
             </aside>
           </div> 
