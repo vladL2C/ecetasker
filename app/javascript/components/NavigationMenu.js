@@ -10,8 +10,6 @@ class NavigationMenu extends React.Component {
 
   render() {
     return (
-     <div>
-     <div className="my-menu"><p className="menu-title">MENU</p></div> 
         <div className="columns is-mobile">
           <div className="column is-3">
             <aside className="menu">
@@ -31,8 +29,7 @@ class NavigationMenu extends React.Component {
               </ul>
             </aside>
           </div> 
-        </div>
-     </div>   
+        </div>  
     );
   }
 }

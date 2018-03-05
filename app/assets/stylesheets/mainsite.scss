@@ -81,11 +81,25 @@ div.columns.features {
 }
 
 .columns.is-mobile {
-  width: 700px;
+  width: 24rem;
   margin-top: 0;
 }
 
-  .column.is-3{
-    margin-left: 20px;
-    border-right: 1px solid black;
-  }
+.column.is-3{
+  background-color: #37475f;
+  border-radius: 3%;
+  height: 20rem;
+}
+
+.columns.is-mobile>.column.is-3 {
+  width: 60%;
+}
+
+.menu-label {
+  color: #f18484;
+}
+
+.menu-list a {
+  color: #f1d2d2;
+  font-family: "courier";
+}

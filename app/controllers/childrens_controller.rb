@@ -1,4 +1,4 @@
-class ChildsController < ApplicationController
+class ChildrensController < ApplicationController
   skip_before_action :verify_authenticity_token, if: Proc.new{:json_request?}
   def index
     @kids = Child.all
